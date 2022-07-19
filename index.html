@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Алексей Костерин</title>
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="hero-title mb-4">Алексей Костерин</h1>
+          <p class="hero-subtitle"> <span id="words"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script defer type="text/javascript">
+    (function () {
+      var words = ["Если говорить неправду достаточно долго, достаточно громко и достаточно часто — люди начнут верить. Адольф Гитлер","Среди слепых — одноглазый царь","Свобода ничего не стоит, если она не включает в себя свободу ошибаться. Мохандас Ганди","Прямые деревья срубают, а искривленные оставляют расти. Каутилья Артхашастра","Подбери пчелу из доброты, и ты узнаешь, чем закончится доброта" ],
+      i = 0;
+      setInterval(function(){ $('#words').fadeOut(function(){
+          $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+        }); }, 6000)
+    })();
+  </script>
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">2021-2022 &copy; <strong>www.alexeykosterin.ru</strong>. Все права защищены.</p>
+            <div class="credits">
+              Все материалы сайта бесплатны и доступны для использования и цитирования.
+            </div>
+            <a href="#">Telegram </a><a href="#">GitHub</a> <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>
